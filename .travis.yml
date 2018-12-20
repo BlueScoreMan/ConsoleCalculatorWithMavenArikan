@@ -1,12 +1,10 @@
 language: java
 sudo: false
 script: mvn install
-
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
-  skip_cleanup: true
+  api_key:
+    secure: Mf/UHB4GrGC64DQmosuAghpc0nWEJQJWxg2NETTfwy7zdGu6FEG6dOa/O85fVIhEMq6ONTd8Rpw5hF8CLmLcIIA6kA8Pw5myQ9/680Z5J07UnAymeKbWCmxEFOB/l6xWRdf4oVySjrbBPeu3huAHZASqctpkWu7tbpRpRFi8T8uQNeJTGFv2p5vYNzj4DDgQwgrNUoCaamc9jBAh+mJaCD9K1L1wJK4hWbw5octJCFRAU9EHx/BY/XY24JibzttxBUfYABzm41IkJhB/ljMupp08gFJj2Rh06KJqkQzwL8tPxmFuSpVo4nTVyXOg+ClForTS1ItGUAdRAPJjYpwBAQ8FGsDPMR9417BmH/XQFz+XYhjd0hw6CpLwzL2+9WRT9SnUoi5RXkh2lBPAfrgAk2bccBrNlcQtEYUjhRo3/xYAj1sF2/UbzpSNyiohXbJ73XTwIPNp9I8ZJJqeLBpPjz4sKKmQ4IBr8wdSMNnx2NbS0uofQKaFfic1LX6sqtDPB1nuSZr4/xrAxXUAi/K5tZILg/VmeZykhBs0gMZ6T91M2kh1broYy/Q6p4j7zEBgipTY433L1o3rN/SdR9xT6w+SJWBbuwqSmKFShWDmFv4uG56gGWu9j4IjWm9Rpba5BL7qCOjauCKUMeCvdST96EkGuOYhxxj2UADlKlYrdCE=
+  file: target\02_ConsoleCalculatorWithMavenArikan-1.0-SNAPSHOT.jar
   on:
-    tags: true
-    all_branches: true
+    repo: BlueScoreMan/ConsoleCalculatorWithMavenArikan
