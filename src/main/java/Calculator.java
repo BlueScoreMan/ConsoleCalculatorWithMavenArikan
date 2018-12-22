@@ -8,4 +8,10 @@ public class Calculator {
         long result = (long) x - (long) y;
         return (int) result;
     }
+
+    public int multiplication(int x, int y) {
+        long result = (long) x * (long) y;
+        return (int) result;
+    }
+
 }
