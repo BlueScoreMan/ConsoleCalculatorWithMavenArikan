@@ -14,4 +14,8 @@ public class Calculator {
         return (int) result;
     }
 
+    protected int division(int x, int y) {
+        long result = (long) x / (long) y;
+        return (int) result;
+    }
 }
