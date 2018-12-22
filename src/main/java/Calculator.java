@@ -4,4 +4,8 @@ public class Calculator {
         return x + y;
     }
 
+    public int subtraction(int x, int y) {
+        long result = (long) x - (long) y;
+        return (int) result;
+    }
 }
